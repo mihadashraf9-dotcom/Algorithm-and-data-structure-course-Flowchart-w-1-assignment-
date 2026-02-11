@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchart .hmw"/>
+        <attribute name="authors" value="mihad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-11 12:00:47 PM"/>
+        <attribute name="created" value="bWloYWQ7TUlIQURTOzIwMjYtMDItMTE7MTA6NTg6MzUgQU07MjIxOA=="/>
+        <attribute name="edited" value="bWloYWQ7TUlIQURTOzIwMjYtMDItMTE7MTI6MDA6NDcgUE07MTsyMzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <assign variable="TOTAL" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <input variable="number"/>
+                <if expression="number % 2 = 0">
+                    <then>
+                        <assign variable="TOTAL" expression="TOTAL+ number"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Sum of even numbers: &quot; + TOTAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
